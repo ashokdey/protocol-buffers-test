@@ -1,0 +1,13 @@
+syntax="proto3";
+
+import "protobuff/city.proto";
+
+package street;
+
+// option go_package="github.com/ashokdey/proto-test";
+option go_package="testingproto/basic";
+
+message Street {
+  string name = 1;
+  city.City city = 2;
+}

@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package city;
+
+// option go_package="github.com/ashokdey/proto-test";
+option go_package="testingproto/basic";
+
+message City {
+  string name = 1;
+  string zip_code = 2;
+  string country_name = 3;
+}

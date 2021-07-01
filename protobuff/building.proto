@@ -1,0 +1,14 @@
+syntax="proto3";
+
+import "protobuff/street.proto";
+
+package building;
+
+// option go_package="github.com/ashokdey/proto-test";
+option go_package="testingproto/basic";
+
+message Building {
+  string building_name = 1;
+  int32 building_number = 2;
+  street.Street street = 3;
+}
